@@ -108,7 +108,7 @@ header {
    rgba(54,3,138, .37),
    rgba(80,114,3, .77)
    ) */
-    url("../index/img_index/fondoo.jpg");
+    url("../index1/img_index/fondoo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -133,8 +133,8 @@ nav {
 .contenedor-nav {
     display: flex;
     margin: auto;
-    width: 90%;
-    justify-content: space-between;
+    width: 99%;
+    justify-content: space-around;
     align-items: center;
     max-width: 1000px;
     height: inherit;
@@ -155,11 +155,6 @@ nav {
 nav .enlaces a:hover {
     border-bottom: 3px solid #10dff1;
     transition: 0.6s;
-}
-
-.logo,
-.logo img {
-    height: 80px;
 }
 
 .icono {
@@ -262,7 +257,7 @@ nav .enlaces a:hover {
 .about {
     width: 100%;
     height: auto;
-    background: url("../index/img_index/arena.jpg");
+    background: url("../index1/img_index/arena.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -399,7 +394,7 @@ footer {
     width: 100%;
     height: auto;
     margin-bottom: 5px;
-    background: url("../index/img_index/beach.jpg");
+    background: url("../index1/img_index/beach.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -444,8 +439,8 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    .nav2 {
-        color: #fff;
+    .nav1 {
+        color: #f2f2f2;
     }
     .icono {
         display: block;
@@ -454,7 +449,6 @@ footer {
     .enlaces {
         position: fixed;
         top: 50px;
-        /*background: #2c3e50;*/
         left: 0;
         height: 38%;
         transition: 1s;
@@ -467,13 +461,12 @@ footer {
         height: 50px;
         padding: 20px;
         text-align: center;
-        /* background: #34495e;*/
         color: #fff;
     }
     .fondo {
         width: 100%;
         height: 100%;
-        background: url("../index/img_index/arbol.jpg");
+        background: url("../index1/img_index/arbol.jpg");
         background-position: center;
         background-size: cover;
         overflow: hidden;

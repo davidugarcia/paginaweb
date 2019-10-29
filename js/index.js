@@ -5,8 +5,9 @@ let abrir = document.getElementById("open");
 let cerrado = true;
 var color1 = document.querySelectorAll("div a");
 let fondo = document.getElementById("fondo");
+var imglogo = document.getElementById("imglogo");
 
-console.log(fondo);
+console.log(imglogo);
 
 //cuando recarga pagina.
 window.addEventListener("load", function() {
@@ -37,6 +38,7 @@ function menus() {
         for (let i = 0; i < color1.length; i++) {
             color1[i].style.color = "#c195a1";
         }
+        imglogo.style.cssText += "width: 100px; height:100px  transition: 1s;"
     } else {
         nav.classList.remove("nav1");
         nav.classList = ("nav2");
@@ -46,6 +48,8 @@ function menus() {
         for (let i = 0; i < color1.length; i++) {
             color1[i].style.color = "rgba(236, 235, 239, 0.96)";
         }
+
+        imglogo.style.cssText += "width: 80px; height: 80px  transition:1s;"
     }
 }
 
