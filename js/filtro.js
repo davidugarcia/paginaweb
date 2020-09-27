@@ -5,6 +5,7 @@ $(function() {
         if (valor == "todos") {
             $(".cont-work").show("1000");
         } else {
+            //mustra los que no sean igual al valor=todo
             $(".cont-work").not("." + valor).hide("1000");
             $(".cont-work").filter("." + valor).show("1000");
         }

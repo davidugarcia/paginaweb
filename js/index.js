@@ -8,8 +8,10 @@ let fondo = document.getElementById("fondo");
 var imglogo = document.getElementById("imglogo");
 
 console.log(imglogo);
+console.log(color1);
 
-//cuando recarga pagina.
+//cuando recarga pagina. 
+//remueve el atributo hidden del body
 window.addEventListener("load", function() {
     menus();
     $("#onload").fadeOut();
@@ -20,8 +22,8 @@ window.addEventListener("load", function() {
 
 //colocar nav1 o nav2 con evento scroll
 window.addEventListener("scroll", function() {
-    //console.log(window.pageYOffset);
-    //--pageYOffset: regresa tamaño de la pantalla.
+    //pageYOffset: regresa un numero en donde se ubica el scrollbar
+    console.log(window.pageYOffset);
     menus();
 
 
@@ -30,15 +32,19 @@ window.addEventListener("scroll", function() {
 function menus() {
     let desplazamiento_actual = window.pageYOffset;
     if (desplazamiento_actual <= 320) {
+        //no remueve los atributos
         nav.classList.remove("nav2");
         nav.classList = ("nav1");
         nav.style.transition = "1s";
         menu.style.top = "80px";
 
+        //no le cambia el color a letra del nav
         for (let i = 0; i < color1.length; i++) {
             color1[i].style.color = "#c195a1";
         }
+
         imglogo.style.cssText += "width: 100px; height:100px  transition: 1s;"
+
     } else {
         nav.classList.remove("nav1");
         nav.classList = ("nav2");
@@ -57,7 +63,7 @@ function menus() {
 
 
 
-//dar click en icono.
+//dar click en icono cuando se minimiza el body.
 abrir.addEventListener("click", function() {
     apertura();
 })
