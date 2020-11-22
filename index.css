@@ -20,10 +20,6 @@ body {
     background: var(--fondo);
 }
 
-img {
-    vertical-align: top;
-}
-
 #particles-js {
     width: 100%;
     height: 100%;
@@ -37,7 +33,7 @@ img {
 }
 
 
-/* Preloader */
+/*--------------------- Preloader -----------------------------*/
 
 .hidden {
     overflow: hidden;
@@ -98,7 +94,7 @@ img {
 }
 
 
-/*header*/
+/*---------------------header-------------------------------*/
 
 header {
     width: 100%;
@@ -117,12 +113,10 @@ nav {
 
 .nav1 {
     background: transparent;
-    height: 80px;
 }
 
 .nav2 {
     background: var(--fondo);
-    height: 100px;
 }
 
 .contenedor-nav {
@@ -144,7 +138,7 @@ nav {
     font-weight: 300;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    color: #c195a1;
+    color: #f2f2f2!important;
 }
 
 nav .enlaces a:hover {
@@ -165,7 +159,6 @@ nav .enlaces a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: #f2f2f2;
     overflow: hidden;
     text-align: center;
 }
@@ -180,7 +173,7 @@ nav .enlaces a:hover {
 }
 
 
-/*main*/
+/*----------------main--------------------------*/
 
 .contenedor {
     margin: auto;
@@ -215,7 +208,7 @@ nav .enlaces a:hover {
 }
 
 
-/* imagenes card */
+/*--------------- imagenes card-----------------------------*/
 
 .card {
     display: flex;
@@ -228,9 +221,10 @@ nav .enlaces a:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0.5);
     overflow: hidden;
     height: 400px;
+    margin-top: ;
 }
 
-.people {
+.areatext {
     height: 75%;
 }
 
@@ -506,4 +500,14 @@ footer {
 
 .color1 {
     color: #c195a1;
+}
+
+@media (max-width: 360px) {
+    .content-card {
+        width: 100%;
+        box-shadow: 0 0 6px rgba(0, 0, 0.5);
+        overflow: hidden;
+        height: 400px;
+        margin-top: 22px;
+    }
 }
