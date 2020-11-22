@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
@@ -61,13 +62,13 @@
 
         <main>
             <!--card-->
-            <section class="contenedor" id="equipo">
+            <section class="contenedor" id="">
                 <h3>Nuestro equipo</h3>
                 <p class="after">Conoce ala gente asombrosa y creativa</p>
 
                 <!--card-->
 
-                <div class="card">
+                <!--  <div class="card">
                     <div class="content-card">
                         <div class="areatext">
                             <img src="img_index/vista.jpg" alt="">
@@ -100,6 +101,19 @@
                             <p>Lorem ipsumdolor sit</p>
                         </div>
                     </div>
+                </div> -->
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./img/arbol.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/arbol1.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/arbol3.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/camino13.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(./img/paisaje2.jpg)"></div>
+                    </div>
+                    <!-- añade paginacion -->
+                    <div class="swiper-pagination"></div>
                 </div>
 
             </section>
@@ -270,9 +284,34 @@
     <!--CDN de particulas y libreria-->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/particulas.js"></script>
-
-
     <script src="js/jquery3.4.1.min.js"></script>
+
+    <!------------------------------------------------------->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+    <!------------------------------------------------------->
+
+
     <script src="js/filtro.js"></script>
     <script src="js/index.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

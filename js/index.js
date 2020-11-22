@@ -7,8 +7,8 @@ var color1 = document.querySelectorAll("div a");
 let fondo = document.getElementById("fondo");
 var imglogo = document.getElementById("imglogo");
 
-console.log(imglogo);
-console.log(color1);
+//console.log(imglogo);
+//console.log(color1);
 
 //cuando recarga pagina. 
 //remueve el atributo hidden del body
@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
 //colocar nav1 o nav2 con evento scroll
 window.addEventListener("scroll", function() {
     //pageYOffset: regresa un numero en donde se ubica el scrollbar
-    console.log(window.pageYOffset);
+    //console.log(window.pageYOffset);
     menus();
 
 
@@ -82,7 +82,7 @@ function apertura() {
 
 //evento para cerrar el nav con dar cualquier click en la pantalla
 window.addEventListener("click", function(e) {
-    console.log(e.target);
+    // console.log(e.target);
     if (cerrado == false) {
         let span = document.querySelector("span");
         if (e.target !== span && e.target !== abrir) {
