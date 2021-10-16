@@ -5,7 +5,7 @@ let abrir = document.getElementById("open");
 let cerrado = true;
 var color1 = document.querySelectorAll("div a");
 let fondo = document.getElementById("fondo");
-var imglogo = document.getElementById("imglogo");
+// var imglogo = document.getElementById("imglogo");
 
 //console.log(imglogo);
 //console.log(color1);
@@ -25,8 +25,6 @@ window.addEventListener("scroll", function() {
     //pageYOffset: regresa un numero en donde se ubica el scrollbar
     //console.log(window.pageYOffset);
     menus();
-
-
 })
 
 function menus() {
@@ -43,7 +41,7 @@ function menus() {
             color1[i].style.color = "#c195a1";
         }
 
-        imglogo.style.cssText += "width: 100px; height:100px  transition: 1s;"
+        //imglogo.style.cssText += "width: 100px; height:100px  transition: 1s;"
 
     } else {
         nav.classList.remove("nav1");
@@ -55,13 +53,8 @@ function menus() {
             color1[i].style.color = "rgba(236, 235, 239, 0.96)";
         }
 
-        imglogo.style.cssText += "width: 80px; height: 80px  transition:1s;"
     }
 }
-
-
-
-
 
 //dar click en icono cuando se minimiza el body.
 abrir.addEventListener("click", function() {
