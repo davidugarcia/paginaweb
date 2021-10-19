@@ -1,5 +1,5 @@
 :root {
-    --color1: rgb(127, 205, 238);
+    --color1: rgb(28 28 28);
     --color2: rgba(236, 235, 239, 0.96);
     --color3: rgb(154, 170, 177);
     --fondo: #ffffff;
@@ -92,8 +92,7 @@ body {
 header {
     width: 100%;
     height: 660px;
-   /* background: url("img_index/fondoo.jpg");*/
-   background: url("Imganes/blogs.jpg");
+    background: url("./img_index/blogs.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -373,6 +372,7 @@ nav .enlaces a:hover {
 .texto-work {
     line-height: 30px;
     font-weight: 300;
+    background: #fffdfd;
 }
 
 .textos-work {
