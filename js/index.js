@@ -7,8 +7,6 @@ var color1 = document.querySelectorAll("div a");
 let fondo = document.getElementById("fondo");
 
 console.log(color1);
-console.log(abrir);
-console.log(cerrado);
 
 //cuando recarga pagina. 
 //remueve el atributo hidden del body

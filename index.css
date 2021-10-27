@@ -126,7 +126,7 @@ nav {
 
 .compu {
     font-size: 3.5em;
-    color: #cae3fa;
+    color: #ffffff;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -138,7 +138,7 @@ nav {
     font-size: 20px;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    color: #cde7ff!important;
+    color: #000000!important;
 }
 
 nav .enlaces a:hover {
@@ -391,33 +391,28 @@ footer {
     width: 100%;
     height: auto;
     margin-bottom: 5px;
-    background: url("img_index/cielo.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.marca-logo {
-    width: 40%;
-    margin: auto;
-    margin-bottom: var(–espacios);
-}
-
-.marca-logo img {
-    width: 100%;
+    background-color: #000;
 }
 
 .iconos {
-    display: flex;
     margin: auto;
-    justify-content: space-around;
-    width: 50%;
+    text-align: center;
 }
-
+.afterfoot::after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 500px;
+    height: 2px;
+    background-color: #cef;
+    margin-bottom: var(--espacios-contenido);
+}
 .fab {
-    font-size: 50px;
-    color: #FFF;
-    margin-bottom: var(–espacios);
-    display: inline-block;
+    font-size: 40px;
+    color: #fdfdfd;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .contenedor2 {
