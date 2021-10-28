@@ -331,13 +331,13 @@ nav .enlaces a:hover {
 }
 
 .botones-work li:hover {
-    background: var(--color3);
-    color: #021117;
+    background: rgb(125 201 235);
+    color: #000000;
     cursor: pointer;
 }
 
 .botones-work .active {
-    background: var(--color3);
+    background: rgb(87 185 18 / 64%);
     color: #021117;
 }
 
@@ -428,6 +428,11 @@ footer {
     font-weight: 300;
     font-size: var(--titulos);
     color: var(--color2);
+}
+
+.letrafoot{
+    margin-top: 15px;
+    font-family: eli;
 }
 
 @media screen and (max-width: 700px) {
