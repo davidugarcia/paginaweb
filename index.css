@@ -280,8 +280,15 @@ nav .enlaces a:hover {
     text-align: center;
 }
 
+.servicios .fas{
+    font-size: 60px;
+    color: #fdfdfd;
+    padding-bottom: 5px;
+}
+
+
 .contenedor1 {
-    margin: auto;
+    margin-left: 90px;
     padding: var(--margenes) 0;
     width: 90%;
     max-width: 1000px;
@@ -372,7 +379,7 @@ nav .enlaces a:hover {
 .texto-work {
     line-height: 30px;
     font-weight: 300;
-    background: #fffdfd;
+    background: #8a5d8f99;
 }
 
 .textos-work {
@@ -383,7 +390,6 @@ nav .enlaces a:hover {
     line-height: 30px;
     font-weight: 300;
 }
-
 
 /*footer*/
 
@@ -413,6 +419,10 @@ footer {
     color: #fdfdfd;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.caja-servicios {
+    margin: 15px;
 }
 
 .contenedor2 {
@@ -463,21 +473,35 @@ footer {
         height: 100%;
         background: #9e5e5e;
         background-position: center;
-        /*background-size: cover;*/
         overflow: hidden;
         left: 0;
     }
     .textos>h1 {
-        font-size: 70px;
+        font-size: 50px;
+        padding-left: 15px;
+        margin-bottom: 30px;
     }
     .textos>h2 {
-        font-size: 35px;
+        font-size: 22px;
+    }
+
+    .contenedor1 {
+        margin: 30px;
     }
     .content-card {
         width: 48%;
         margin-bottom: var(-–margenes);
     }
-     :root {
+
+    .contenedor2 p {
+        font-size: 20px;
+    }
+
+    .servicios .fas{
+        font-size: 40px;
+    }
+
+     :root{
         -–margenes: 30px;
     }
 }
@@ -515,11 +539,14 @@ footer {
     .iconos {
         display: flex;
         margin: auto;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    .caja-servicios p{
+        font-size: 25px;
     }
 }
-
 
 /*slider*/
 
