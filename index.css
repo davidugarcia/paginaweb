@@ -107,10 +107,12 @@ nav {
 
 .nav1 {
     background: transparent;
+    transition: 1s;
 }
 
 .nav2 {
     background: var(--fondo);
+    transition: 1s;
 }
 
 .contenedor-nav {
@@ -124,9 +126,9 @@ nav {
     overflow: hidden;
 }
 
-.compu {
+.robot {
     font-size: 3.5em;
-    color: #ffffff;
+    color: white;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -449,7 +451,7 @@ footer {
     .icono {
         display: block;
         cursor: pointer;
-        color: white;
+        color: black;
     }
     .enlaces {
         position: fixed;
@@ -501,13 +503,13 @@ footer {
         font-size: 40px;
     }
 
-     :root{
+    :root{
         -–margenes: 30px;
     }
 }
 
 @media screen and (max-width: 500px) {
-     :root {
+    :root {
         perspective-origin: 25px;
     }
     .content-card {

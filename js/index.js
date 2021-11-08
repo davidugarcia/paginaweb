@@ -1,12 +1,11 @@
 //variables
 let nav = document.getElementById("nav");
 let menu = document.getElementById("enlaces");
+let robot = document.getElementById("robot");
+// Phone
 let abrir = document.getElementById("open");
 let cerrado = true;
-var color1 = document.querySelectorAll("div a");
 let fondo = document.getElementById("fondo");
-
-console.log(color1);
 
 //cuando recarga pagina. 
 //remueve el atributo hidden del body
@@ -26,25 +25,15 @@ window.addEventListener("scroll", function() {
 function menus() {
     let desplazamiento_actual = window.pageYOffset;
     if (desplazamiento_actual <= 320) {
-        //no remueve los atributos
         nav.classList.remove("nav2");
         nav.classList = ("nav1");
-        nav.style.transition = "1s";
         menu.style.top = "80px";
-
-        //no le cambia el color a letra del nav
-        for (let i = 0; i < color1.length; i++) {
-            color1[i].style.color = "#c195a1";
-        }
-        //imglogo.style.cssText += "width: 100px; height:100px  transition: 1s;"
+        robot.style.color = "white";
     } else {
         nav.classList.remove("nav1");
         nav.classList = ("nav2");
-        nav.style.transition = "1s";
         menu.style.top = "100px";
-        for (let i = 0; i < color1.length; i++) {
-            color1[i].style.color = "rgba(236, 235, 239, 0.96)";
-        }
+        robot.style.color = "#918585";
     }
 }
 
@@ -68,10 +57,11 @@ function apertura() {
 }
 
 //evento para cerrar el nav con dar cualquier click en la pantalla
-/*window.addEventListener("click", function(e) {
+window.addEventListener("click", function(e) {
     // console.log(e.target);
     if (cerrado == false) {
-        let span = document.querySelector("span");
+        let span = document.querySelector(".icono span");
+        console.log(span);
         if (e.target !== span && e.target !== abrir) {
             menu.style.width = "0%";
             menu.style.overflow = "hidden";
@@ -79,7 +69,7 @@ function apertura() {
             console.log(cerrado);
         }
     }
-})*/
+})
 
 window.addEventListener("resize", function() {
     if (screen.width >= 700) {
@@ -87,5 +77,4 @@ window.addEventListener("resize", function() {
         menu.style.removeProperty("overflow");
         menu.style.removeProperty("width");
     }
-
 })
